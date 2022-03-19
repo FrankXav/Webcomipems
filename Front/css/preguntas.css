@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    background-color: rgb(79, 79, 216);
+    height: 50px;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.intrucciones {
+    margin-top: 10px;
+    padding-left: 10px;
+}

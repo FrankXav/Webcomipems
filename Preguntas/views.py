@@ -9,6 +9,12 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .models import *
 from .serializers import *
 
+def index(request):
+    return render(request, 'index.html')
+
+def plantilla(request):
+    return render(request, 'preguntas.html')
+
 class MateriaList(generics.ListAPIView):
     serializer_class = materiasSerializer
     
@@ -26,6 +32,12 @@ class OpcionesList(generics.ListAPIView):
     
     def get_queryset(self):
         return self.get_serializer().Meta.model.objects
+
+""" class PreguntaDetail(generics.RetrieveAPIView):
+    serializer_class = preguntasSerializer
+    
+    def get_queryset(self):
+        return self.get_queryset().Meta.model.objects """
 
 class PreguntasoList(generics.ListAPIView):
     queryset = opciones.objects.all()

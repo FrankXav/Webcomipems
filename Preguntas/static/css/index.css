@@ -1,0 +1,44 @@
+body {
+    padding:0;
+    margin: 0%;
+}
+
+.titulo {
+    background-color: rgb(79, 79, 216);
+    height: 50px;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.intrucciones {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.materias {
+    border: solid 2px rgb(79, 79, 216);
+    height: 450px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.Opcion {
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    margin-top: 17px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    border: solid 2px black;
+}
+
+.Nombre {
+    margin: auto;
+    padding:11px;
+    width: 60%;
+}

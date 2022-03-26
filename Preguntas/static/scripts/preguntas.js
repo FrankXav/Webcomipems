@@ -71,7 +71,7 @@ const boton = async () => {
 
 const aleatoria = async () =>{
     idp = []
-    let urlo = "http://127.0.0.1:8000/preguntas/?materia_p=" + idmateria
+    let urlo = "/preguntas/?materia_p=" + idmateria
     const pŕeguntaslp = await fetch(urlo);
     const preguntasl = await pŕeguntaslp.json()
     preguntasl.forEach(element =>{
@@ -82,7 +82,7 @@ const aleatoria = async () =>{
 
 const pregunta = async () =>{
     ids = []
-    let urlp = "http://127.0.0.1:8000/preguntas/?materia_p=" + idmateria 
+    let urlp = "/preguntas/?materia_p=" + idmateria 
     const preguntasp = await fetch(urlp);
     const preguntas = await preguntasp.json()
     cpregunta = document.getElementById("pregunta")
@@ -107,7 +107,7 @@ const pregunta = async () =>{
     else if (idmateria == "5"){
         cpregunta.style.backgroundColor = 'white';
     }
-    let urlo = "http://127.0.0.1:8000/opciones/?pregunta_o=" + preguntas[rand].id
+    let urlo = "/opciones/?pregunta_o=" + preguntas[rand].id
     const opcionesp = await fetch(urlo);
     const opciones = await opcionesp.json()
     copciones = document.getElementById("opciones")

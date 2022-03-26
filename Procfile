@@ -1,1 +1,1 @@
-web: gunicorn <comipemsweb>.wsgi --log-file -
+web: gunicorn comipemsweb.wsgi --log-file -

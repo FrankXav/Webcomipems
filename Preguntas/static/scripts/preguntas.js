@@ -87,7 +87,6 @@ const pregunta = async () =>{
     const preguntas = await preguntasp.json()
     cpregunta = document.getElementById("pregunta")
     let rand = Math.floor(Math.random()*idp.length);
-    console.log(rand)
     cpregunta.innerHTML = preguntas[rand].pregunta
     if (idmateria == "1"){
         cpregunta.style.backgroundColor = 'rgba(255, 0, 0, 0.719)';
@@ -126,7 +125,6 @@ const pregunta = async () =>{
         opcion.setAttribute("onclick", "validacion('"+element.id+"','"+val+"','"+ids+"')");
         copciones.appendChild(opcion)
     });
-    console.log(ids)
 }
 
 aleatoria()
